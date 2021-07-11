@@ -52,9 +52,11 @@
                         {% endfor %}
                     </div>
                 </div>
+                <a>　　　　　　　　　※ タグは複数選択可能です</a>
                 <br>
+                <br><br>
                 <div class="form-group row">
-                    <label for="{{ form.description.id_for_label }}" class="col-sm-3 col-form-label">詳細</label>
+                    <label for="{{ form.description.id_for_label }}" class="col-sm-3 col-form-label">コメント</label>
                     <div class="col-sm-9">
                         {{ form.description|add_class:'form-control' }}
                         {% for error in form.description.errors %}
@@ -71,8 +73,10 @@
                             <span class="help-block">{{ error }}</span>
                         {% endfor %}
                     </div>
-                </div>
-                <br>
+                </div><br>
+                <a>　※ URLの取得方法</a><br><br>
+                <a>　　YouTubeで共有を選択 → 埋め込む → 埋め込みのURLを貼り付け</a>
+                <br><br><br>
                 <div class="form-group row">
                     <label for="{{ form.image.id_for_label }}" class="col-sm-3 col-form-label">写真</label>
                     <div class="col-sm-9">
